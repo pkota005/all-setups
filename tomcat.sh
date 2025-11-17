@@ -1,4 +1,4 @@
-amazon-linux-extras install java-openjdk11 -y
+sudo dnf install -y java-11-amazon-corretto
 wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.96/bin/apache-tomcat-9.0.96.tar.gz
 tar -zxvf apache-tomcat-9.0.96.tar.gz
 sed -i '56  a\<role rolename="manager-gui"/>' apache-tomcat-9.0.96/conf/tomcat-users.xml
